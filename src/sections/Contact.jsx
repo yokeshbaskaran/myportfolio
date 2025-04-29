@@ -15,20 +15,19 @@ export const Contact = () => {
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6 flex flex-col items-center space-y-3">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            {" "}
-            Get In Touch
+            Contact Me
           </h2>
 
           <img src="/profile.png" width={250} height={250} alt="my-profile" />
 
           <div className="my-3 space-x-3">
-            <a href={linkedinURL}>
+            <a target="_blank" href={linkedinURL}>
               <button className="group p-3 rounded-full text-black hover:text-white bg-[#00bcd4] cursor-pointer hover:shadow-[1px_1px_18px_1px_#00bcd4]">
                 <FaLinkedinIn size={20} />
               </button>
             </a>
 
-            <a href={githubURL}>
+            <a target="_blank" href={githubURL}>
               <button className="group p-3 rounded-full text-black  hover:text-white bg-[#00bcd4] cursor-pointer hover:shadow-[1px_1px_18px_1px_#00bcd4] ">
                 <IoLogoGithub size={20} />
               </button>

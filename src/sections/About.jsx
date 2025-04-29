@@ -64,7 +64,7 @@ export const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {/* College details  */}
 
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="p-6 h-fit rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
@@ -86,14 +86,17 @@ export const About = () => {
               <div className="space-y-4 text-gray-300">
                 {experience.map((data, idx) => (
                   <div key={idx}>
-                    <h4 className="font-semibold">
-                      {data.roleName}
-                      {` (${data.duration})`}
+                    <div>
+                      <span className="font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
+                        {data.roleName}
+                      </span>
+                      <span className="uppercase">{` (${data.duration})`}</span>
+                    </div>
 
-                      <div className="my-1 flex items-center gap-2">
-                        <FcOrganization size={20} /> {data.companyName}{" "}
-                      </div>
-                    </h4>
+                    <div className="my-1 flex items-center gap-2">
+                      <FcOrganization size={20} />
+                      <span className="text-gray-500">{data.companyName}</span>
+                    </div>
                     <p>- {data.shortDescription}</p>
                   </div>
                 ))}
