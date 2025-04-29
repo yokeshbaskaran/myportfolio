@@ -14,7 +14,7 @@
 - **TailwindCSS:** Utility-first CSS framework.
 - **JavaScript (ES6+):** Modern JavaScript features and best practices.
 
-Packages used:
+### Packages used:
 
-npm install tailwindcss @tailwindcss/vite
-npm i react-icons
+- npm i tailwindcss
+- npm i react-icons
