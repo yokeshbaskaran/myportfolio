@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../components/RevealOnScroll";
-import { FcLink } from "react-icons/fc";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "../data/data";
 
 export const Projects = () => {
@@ -25,13 +25,17 @@ export const Projects = () => {
                 key={idx}
                 className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-start">
                   <h3 className="text-xl font-bold mb-2">
                     {project.projectName}
                   </h3>
 
                   <a href={project.livePage} target="_blank">
-                    <FcLink size={20} />
+                    <FaExternalLinkAlt
+                      color="#00b5d2"
+                      size={16}
+                      className="-my-2"
+                    />
                   </a>
                 </div>
 
