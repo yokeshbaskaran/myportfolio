@@ -54,6 +54,7 @@ export const Projects = () => {
                 <div className="flex justify-between items-center">
                   <a
                     href={project.githubLink}
+                    target="_blank"
                     className="text-blue-400 hover:text-blue-300 transition-colors my-2 p-2 rounded-md"
                   >
                     View Project →

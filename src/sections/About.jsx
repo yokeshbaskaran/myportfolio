@@ -95,7 +95,9 @@ export const About = () => {
 
                     <div className="my-1 flex items-center gap-2">
                       <FcOrganization size={20} />
-                      <span className="text-gray-500">{data.companyName}</span>
+                      <span className="text-gray-500 font-bold">
+                        {data.companyName}
+                      </span>
                     </div>
                     <p>- {data.shortDescription}</p>
                   </div>

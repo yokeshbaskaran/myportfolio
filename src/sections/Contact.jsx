@@ -18,7 +18,7 @@ export const Contact = () => {
             Contact Me
           </h2>
 
-          <img src="/profile.png" width={250} height={250} alt="my-profile" />
+          <img src="/profile.png" width={300} height={300} alt="my-profile" />
 
           <div className="my-3 space-x-3">
             <a target="_blank" href={linkedinURL}>
